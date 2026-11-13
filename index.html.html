@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>유럽의 커피 공식이 바뀐다 | ICE COFFEE REPORT</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap');
+:root{--ink:#211d1a;--brown:#5b3829;--cream:#f6f2e9;--paper:#fffdf8;--blue:#a9dce8;--deep:#174e60;--muted:#81786e;--line:#e5ded2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Noto Sans KR',sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.topbar{height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 max(5vw,22px);border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.12em;font-weight:800}
+.brand{font-family:'DM Sans';font-size:15px;letter-spacing:.18em}.topbar span:last-child{color:var(--muted)}
+.hero{min-height:690px;position:relative;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;background:#d9e8e8}
+.hero-copy{padding:95px 7vw 80px;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.kicker{font:700 11px 'DM Sans';letter-spacing:.2em;color:var(--deep);display:flex;align-items:center;gap:10px}.kicker:before{content:'';width:28px;height:2px;background:var(--deep)}
+.hero h1{font-size:clamp(48px,6.3vw,88px);line-height:1.12;letter-spacing:-.075em;margin:27px 0 24px;font-weight:900}.hero h1 em{font-style:normal;color:var(--deep)}
+.hero-desc{font-size:17px;line-height:1.85;max-width:450px;color:#4b5552}.hero-meta{margin-top:42px;font:600 11px 'DM Sans';letter-spacing:.1em;color:#68736f}
+.hero-image{min-height:690px;background:linear-gradient(90deg,#d9e8e8 0%,transparent 23%),url('https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1300&q=85') center/cover;position:relative}
+.hero-image:after{content:'A NEW COFFEE CULTURE';position:absolute;right:28px;bottom:28px;color:#fff;font:700 10px 'DM Sans';letter-spacing:.2em;text-shadow:0 1px 8px #333}
+.scroll{position:absolute;bottom:25px;left:7vw;font:700 10px 'DM Sans';letter-spacing:.16em;color:var(--deep)}
+.section{max-width:1120px;margin:auto;padding:115px 34px}.section-head{display:flex;align-items:flex-start;gap:25px;margin-bottom:48px}.num{font:800 13px 'DM Sans';color:var(--deep);border:1px solid #8abac5;border-radius:50%;width:42px;height:42px;display:grid;place-items:center;flex-shrink:0}
+.eyebrow{font:700 11px 'DM Sans';letter-spacing:.18em;color:var(--muted);margin:0 0 12px}.section h2{font-size:clamp(31px,4vw,48px);letter-spacing:-.06em;line-height:1.25;margin:0;font-weight:900}.section h2 .blue{color:var(--deep)}
+.lead{font-size:16px;color:#696158;margin:18px 0 0;max-width:650px}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 32px}
+.stat{background:var(--paper);padding:25px 22px 22px;border-top:3px solid var(--blue);min-height:155px}
+.stat small{font-size:12px;color:var(--muted);font-weight:600}.stat strong{display:block;font:800 clamp(34px,4vw,48px) 'DM Sans';letter-spacing:-.06em;color:var(--deep);margin:9px 0 2px}.stat span{font-size:12px;color:#766d63}
+.source{font-size:11px;color:#8b8176;margin-top:15px}
+.photo-strip{display:grid;grid-template-columns:1.4fr 1fr;gap:14px;margin-top:38px}.photo{height:270px;background-size:cover;background-position:center;position:relative;overflow:hidden}.photo:after{content:attr(data-caption);position:absolute;bottom:0;left:0;right:0;padding:34px 20px 16px;color:white;font-size:12px;font-weight:600;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+.chart-wrap{background:var(--paper);padding:34px 38px 28px;margin-top:36px}.chart-title{font-size:14px;font-weight:800;margin-bottom:28px}.bar-row{display:grid;grid-template-columns:85px 1fr 55px;align-items:center;gap:15px;margin:19px 0}.country{font-size:13px;font-weight:700}.bar-track{height:13px;background:#eee9df;border-radius:20px;overflow:hidden}.bar{height:100%;width:var(--w);background:linear-gradient(90deg,#8acbd9,#2d7182);border-radius:20px;animation:grow 1.2s ease both}.pct{font:700 14px 'DM Sans';text-align:right;color:var(--deep)}@keyframes grow{from{width:0}to{width:var(--w)}}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:38px}.big-stat{background:var(--deep);color:white;padding:38px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between}.big-stat .number{font:800 clamp(58px,7vw,82px) 'DM Sans';letter-spacing:-.07em}.big-stat p{margin:0;color:#d5e9ed;font-size:14px}.big-stat.light{background:#d7edf0;color:var(--ink)}.big-stat.light p{color:#53696d}.big-stat.light .number{color:var(--deep)}
+.note{border-left:3px solid var(--blue);padding:5px 0 5px 18px;color:#655d54;font-size:14px;margin-top:28px}
+.menu-photo{height:340px;background:url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1400&q=85') center 48%/cover;margin-top:38px;position:relative}.menu-photo:after{content:'MORE THAN JUST ESPRESSO';position:absolute;bottom:22px;left:24px;color:white;font:700 11px 'DM Sans';letter-spacing:.2em;text-shadow:0 2px 8px #333}
+.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:42px}.reason{background:var(--paper);padding:28px 25px;min-height:220px}.reason .icon{font-size:27px}.reason h3{font-size:17px;margin:18px 0 9px;letter-spacing:-.04em}.reason p{font-size:13px;color:#756d63;line-height:1.8;margin:0}
+.climate{display:grid;grid-template-columns:1fr 1fr;min-height:320px;margin-top:35px;background:#e7e1d7}.climate-img{background:url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1000&q=85') center/cover}.climate-copy{padding:36px;display:flex;flex-direction:column;justify-content:center}.climate-copy strong{font-size:23px;line-height:1.4;letter-spacing:-.05em}.climate-copy p{font-size:13px;color:#6f675e}
+.korea{background:#e3f0f1}.korea .section{padding-top:110px;padding-bottom:110px}.korea .num{border-color:#6eabb7}.korea .section h2 .blue{color:#236b7b}
+.korea-hero{display:grid;grid-template-columns:1fr 1.1fr;gap:30px;align-items:stretch;margin-top:40px}.korea-image{min-height:370px;background:url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=85') center/cover}.korea-numbers{display:grid;grid-template-columns:1fr 1fr;gap:12px}.k-number{background:#f8fcfb;padding:27px;display:flex;flex-direction:column;justify-content:center}.k-number strong{font:800 clamp(44px,5vw,62px) 'DM Sans';color:#1c6576;letter-spacing:-.07em}.k-number span{font-size:13px;font-weight:700;margin-top:5px}.k-number small{font-size:11px;color:#7c8c8d;margin-top:9px}
+.quote{background:var(--brown);color:#fff;padding:80px 7vw;text-align:center}.quote .eyebrow{color:#d9c2b4}.quote h2{font-size:clamp(30px,4.6vw,55px);line-height:1.35;letter-spacing:-.06em;margin:15px auto;max-width:850px}.quote h2 em{font-style:normal;color:#bce7ee}.quote p{font-size:14px;color:#e2d7d0;max-width:690px;margin:20px auto 0;line-height:1.9}
+.footer{padding:28px 6vw;display:flex;justify-content:space-between;gap:20px;font:600 10px 'DM Sans';letter-spacing:.12em;color:#8a8177}
+@media(max-width:760px){.hero{grid-template-columns:1fr;min-height:auto}.hero-copy{padding:76px 25px 55px}.hero h1{font-size:54px}.hero-image{min-height:360px;grid-row:1}.scroll{display:none}.section{padding:78px 22px}.section-head{gap:15px;margin-bottom:35px}.stats-grid{grid-template-columns:1fr 1fr}.stat{min-height:135px;padding:20px 16px}.photo-strip,.split,.climate,.korea-hero{grid-template-columns:1fr}.photo{height:230px}.chart-wrap{padding:25px 18px}.bar-row{grid-template-columns:60px 1fr 42px;gap:9px}.reasons{grid-template-columns:1fr}.reason{min-height:0}.climate-img{min-height:230px}.climate-copy{padding:28px}.korea-image{min-height:260px}.k-number{padding:20px}.quote{padding:65px 24px}.footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="brand">THE DAILY / CULTURE</div><span>FOOD &amp; LIFESTYLE REPORT · 2026</span></header>
+<main>
+<section class="hero">
+ <div class="hero-copy">
+  <div class="kicker">GLOBAL COFFEE TREND</div>
+  <h1>유럽의 커피<br>공식이<br><em>바뀌고 있다</em></h1>
+  <p class="hero-desc">에스프레소만 마시던 유럽인들. 요즘은 아이스커피에 빠졌습니다. 따뜻한 커피가 익숙했던 유럽에서 차가운 커피가 새로운 일상으로 자리 잡고 있습니다.</p>
+  <div class="hero-meta">SPECIAL REPORT &nbsp; / &nbsp; 5 CHAPTERS</div>
+ </div>
+ <div class="hero-image"></div>
+ <div class="scroll">SCROLL TO EXPLORE ↓</div>
+</section>
+
+<section class="section">
+ <div class="section-head"><div class="num">01</div><div><p class="eyebrow">EUROPE · SALES GROWTH</p><h2>에스프레소의 대륙에<br><span class="blue">아이스커피 바람</span></h2><p class="lead">따뜻한 커피가 익숙한 유럽에서 아이스커피 판매가 빠르게 늘고 있습니다. 특히 네덜란드와 영국의 성장세가 두드러집니다.</p></div></div>
+ <div class="stats-grid">
+  <div class="stat"><small>네덜란드</small><strong>44%</strong><span>판매량 증가</span></div>
+  <div class="stat"><small>영국</small><strong>39%</strong><span>판매량 증가</span></div>
+  <div class="stat"><small>프랑스</small><strong>20%</strong><span>판매량 증가</span></div>
+  <div class="stat"><small>독일</small><strong>19%</strong><span>판매량 증가</span></div>
+ </div>
+ <div class="chart-wrap"><div class="chart-title">유럽 주요국 아이스커피 판매량 증가율</div>
+  <div class="bar-row"><span class="country">네덜란드</span><div class="bar-track"><div class="bar" style="--w:100%"></div></div><span class="pct">44%</span></div>
+  <div class="bar-row"><span class="country">영국</span><div class="bar-track"><div class="bar" style="--w:88.6%"></div></div><span class="pct">39%</span></div>
+  <div class="bar-row"><span class="country">프랑스</span><div class="bar-track"><div class="bar" style="--w:45.5%"></div></div><span class="pct">20%</span></div>
+  <div class="bar-row"><span class="country">독일</span><div class="bar-track"><div class="bar" style="--w:43.2%"></div></div><span class="pct">19%</span></div>
+  <div class="source">출처: 룩셈부르크 시장조사업체 파이어(Fyre) · 2~8월 아이스커피 판매량 전년 대비 증가율</div>
+ </div>
+ <div class="photo-strip">
+  <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=1000&q=85')" data-caption="차가운 커피를 찾는 유럽의 카페 풍경"></div>
+  <div class="photo" style="background-image:url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=85')" data-caption="익숙한 에스프레소에서 새로운 선택으로"></div>
+ </div>
+</section>
+
+<section class="section" style="padding-top:35px">
+ <div class="section-head"><div class="num">02</div><div><p class="eyebrow">FROM NICHE TO MAINSTREAM</p><h2>틈새에서 <span class="blue">대중으로</span></h2><p class="lead">아이스커피는 더 이상 일부 젊은 층만의 취향이 아닙니다. 영국에서는 세 명 중 한 명이 아이스커피를 즐긴다고 답했습니다.</p></div></div>
+ <div class="split">
+  <div class="big-stat"><span class="eyebrow" style="color:#b9dfe5">UK CONSUMERS</span><div class="number">32%</div><p>영국 소비자 3명 중 1명꼴로<br>아이스커피를 즐긴다고 응답</p></div>
+  <div class="big-stat light"><span class="eyebrow">NEW AUDIENCE</span><div class="number">55+</div><p>젊은 층을 넘어 55세 이상에서도<br>아이스커피 구매가 증가</p></div>
+ </div>
+ <p class="source">출처: 닐슨아이큐(NIQ) '2027 음료 시장 보고서' · 영국 소비자 설문</p>
+ <div class="menu-photo"></div>
+ <p class="note">시럽과 과일향을 더한 메뉴부터 단백질을 보충하는 커피까지. 취향과 라이프스타일에 맞춘 아이스커피 메뉴도 빠르게 다양해지고 있습니다.</p>
+</section>
+
+<section class="section" style="padding-top:45px">
+ <div class="section-head"><div class="num">03</div><div><p class="eyebrow">WHY NOW?</p><h2>젊은 취향, SNS,<br><span class="blue">더워진 유럽</span></h2><p class="lead">한 가지 이유만으로 설명하기는 어렵습니다. 새로운 음료를 찾는 소비자, 시각적인 콘텐츠, 기후 변화가 함께 흐름을 만들고 있습니다.</p></div></div>
+ <div class="reasons">
+  <article class="reason"><div class="icon">🧋</div><h3>① 취향대로 조합</h3><p>젊은 세대는 새로운 메뉴를 시도하는 데 적극적입니다. 시럽과 향, 토핑을 더해 자신만의 커피를 즐깁니다.</p></article>
+  <article class="reason"><div class="icon">📱</div><h3>② SNS에 잘 보이는 음료</h3><p>색감과 비주얼이 강한 아이스 음료는 사진과 영상으로 공유하기 좋습니다. SNS를 통해 새로운 메뉴가 빠르게 퍼집니다.</p></article>
+  <article class="reason"><div class="icon">☀️</div><h3>③ 점점 더워지는 유럽</h3><p>기온이 높아질수록 시원한 음료를 찾는 수요도 커집니다. 더운 여름이 아이스커피의 일상화를 밀어 올립니다.</p></article>
+ </div>
+ <div class="climate">
+  <div class="climate-img"></div>
+  <div class="climate-copy"><p class="eyebrow">CLIMATE CHANGE</p><strong>커피를 마시는 방식도<br>기후의 영향을 받는다</strong><p>올해 여름 서유럽은 관측 이래 가장 더운 여름을 보냈습니다. 더위가 일상화되면서 차가운 음료를 찾는 소비 환경도 달라지고 있습니다.</p></div>
+ </div>
+</section>
+
+<div class="korea">
+<section class="section">
+ <div class="section-head"><div class="num">04</div><div><p class="eyebrow">KOREA · ICE ALL YEAR ROUND</p><h2>한국은 이미<br><span class="blue">사계절 ICE</span></h2><p class="lead">유럽에선 새 트렌드지만, 한국에선 계절을 타지 않는 일상입니다. 한겨울에도 커피 열 잔 중 여섯 잔은 아이스커피입니다.</p></div></div>
+ <div class="korea-hero">
+  <div class="korea-image"></div>
+  <div class="korea-numbers">
+   <div class="k-number"><strong>60%</strong><span>한겨울 아이스커피 비중</span><small>추운 날씨에도 이어지는 아이스 선호</small></div>
+   <div class="k-number"><strong>97%</strong><span>대서 아이스커피 비중</span><small>한여름에는 거의 모든 주문이 아이스</small></div>
+  </div>
+ </div>
+ <p class="source">출처: 메가MGC커피 · 지난해 전국 약 4,000개 매장, 커피 주문 약 4억 건 분석</p>
+</section>
+</div>
+
+<section class="quote">
+ <p class="eyebrow">05 / THE NEW COFFEE NORMAL</p>
+ <h2>뜨거운 커피의 본고장에도<br><em>'ICE'가 일상이 됐다</em></h2>
+ <p>‘얼어 죽어도 아이스 아메리카노’, 얼죽아. 한국에서 먼저 익숙해진 이 소비 방식이 이제 유럽의 커피 문화 변화와도 맞닿고 있습니다.<br><br>기후와 세대의 취향이 만나면서 아이스커피는 더 이상 여름철 메뉴에만 머물지 않고 있습니다. 커피를 마시는 방식의 변화는 지금도 이어지고 있습니다.</p>
+</section>
+</main>
+<footer class="footer"><span>THE DAILY / CULTURE REPORT</span><span>COFFEE CULTURE · ICE EDITION</span></footer>
+</body>
+</html>
